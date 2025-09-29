@@ -1,3 +1,4 @@
+using PeinRecoilRework.Helpers;
 using SPTBattleAmbience.Data;
 using SPTBattleAmbience.Helpers;
 using SPTBattleAmbienceFikaSync.Controllers;
@@ -13,7 +14,7 @@ namespace SPTBattleAmbienceFikaSync.Helpers
         {
             CoopBattleAmbienceController instance = CoopBattleAmbienceController.Instance;
             
-            Plugin.Logger.LogWarning("RECEIVED PACKET!!!");
+            DebugLogger.LogWarning("RECEIVED PACKET!!!");
             BattleSoundPacketStruct packetData = packet.PacketData;
             
             string category = packetData.Category;
@@ -23,15 +24,15 @@ namespace SPTBattleAmbienceFikaSync.Helpers
             int rolloff = packetData.Rolloff;
             float volume = packetData.Volume;
             
-            Plugin.Logger.LogInfo($"PLAYING AMBIENCE AT POSITION: {position}");
+            DebugLogger.LogInfo($"PLAYING AMBIENCE AT POSITION: {position}");
 
             if (!instance.TryGetClip(category, soundType, fileName, out AudioClip clip))
             {
-                Plugin.Logger.LogWarning($"Clip not found! {fileName}");
+                DebugLogger.LogWarning($"Clip not found! {fileName}");
                 return;
             }
             
-            Plugin.Logger.LogInfo($"{category} | {soundType} | {fileName} | {position} | {rolloff} | {volume}");
+            DebugLogger.LogInfo($"{category} | {soundType} | {fileName} | {position} | {rolloff} | {volume}");
 
             ClipInfo clipInfo = new ClipInfo()
             {
