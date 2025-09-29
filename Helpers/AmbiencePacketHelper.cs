@@ -1,7 +1,5 @@
-using SPTBattleAmbience.Config.General;
 using SPTBattleAmbience.Data;
 using SPTBattleAmbience.Helpers;
-using SPTBattleAmbience.Models;
 using SPTBattleAmbienceFikaSync.Controllers;
 using SPTBattleAmbienceFikaSync.Data;
 using SPTBattleAmbienceFikaSync.Packets;

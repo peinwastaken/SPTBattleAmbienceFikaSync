@@ -4,15 +4,11 @@ using Fika.Core.Networking;
 using HarmonyLib;
 using SPT.Reflection.Patching;
 using SPTBattleAmbience.Controllers;
-using SPTBattleAmbience.Data;
-using SPTBattleAmbience.Models;
 using System.Reflection;
 using SPTBattleAmbience.Patches;
 using SPTBattleAmbienceFikaSync.Controllers;
-using SPTBattleAmbienceFikaSync.Data;
 using SPTBattleAmbienceFikaSync.Helpers;
 using SPTBattleAmbienceFikaSync.Packets;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace SPTBattleAmbienceFikaSync.Patches

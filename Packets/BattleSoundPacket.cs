@@ -1,7 +1,6 @@
 using Fika.Core.Networking;
 using LiteNetLib.Utils;
 using SPTBattleAmbienceFikaSync.Data;
-using UnityEngine;
 
 namespace SPTBattleAmbienceFikaSync.Packets
 {

@@ -1,12 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-using Comfort.Common;
-using Fika.Core.Networking;
-using SPTBattleAmbience.Patches;
-using SPTBattleAmbienceFikaSync.Controllers;
-using SPTBattleAmbienceFikaSync.Packets;
 using SPTBattleAmbienceFikaSync.Patches;
-using UnityEngine;
 
 namespace SPTBattleAmbienceFikaSync
 {
